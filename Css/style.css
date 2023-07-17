@@ -1,0 +1,644 @@
+/* --------------------------------GLOBAL-START-------------------------------- */
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.main-heading
+{
+    text-align: center;
+    padding: 30px 0;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(51, 51, 51);
+    position: relative;
+    margin: 10px;
+}
+.main-heading::before
+{
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80px;
+    height: 10px;
+    border-top: 1px solid #ff305b;
+    border-bottom: 1px solid #ff305b;
+}
+.main-heading::after
+{
+    width: 180px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translate(-47%);
+}
+::after , ::before
+{
+    content: '';
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Source Sans 3', sans-serif;
+}
+p
+{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(85, 85, 85);
+    line-height: 24px;
+}
+.aspect-ratio
+{
+    aspect-ratio: 16/9;
+}
+
+a
+{
+    color: inherit;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+}
+li
+{
+    font-family: 'Roboto', sans-serif;
+}
+button
+{
+    font-family: 'Roboto', sans-serif;
+
+}
+.container
+{
+    width: 70%;
+    margin: auto;
+    padding: 10px 0;
+}
+.clear-fix
+{
+    clear: both;
+}
+.special-color
+{
+    color: #ff305b;
+}
+section
+{
+    padding: 70px 0;
+}
+
+/* --------------------------------GLOBAL-FINISH-------------------------------- */
+
+/* --------------------------------HEADER-SECTION -------------------------------- */
+
+.home
+{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) , url(../images/header/slider-02.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+/*  --------------------------------NAV-START -------------------------------- */
+.nav
+{
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 55555;
+}
+.navbar-container
+{
+    margin: auto;
+    width: 90%;
+}
+.nav-logo
+{
+    float: left;
+}
+.nav-list
+{
+    float: right;
+    
+    }
+.nav-list li
+{
+    float: left;
+    padding-right: 20px;
+    font-size: 18px
+    
+    
+}
+.nav-list li a{
+    transition: all 0.3s;
+    font-weight: 300;
+}
+.nav-list li a:hover
+{
+    color: #ff305b;
+}
+/*  --------------------------------NAV-FINISH -------------------------------- */
+
+/* --------------------------------HEADER SECTION START-------------------------------- */
+
+.home-content
+{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.home-content h3
+{
+    font-size: 24px;
+    font-weight: 600;
+}
+.home-content p
+{
+    color: #fff;
+    font-size: 24px;
+}
+.home-content h4{
+    font-size: 26px;
+    font-weight: 300;
+}
+.home-content h1
+{
+    font-size: 70px;
+    font-weight: bold;
+}
+/* --------------------------------HEADER SECTION FINISH-------------------------------- */
+
+/* --------------------------------ABOUT SECTION START-------------------------------- */
+
+/* --------------------------------ABOUT-SECTION-CONTENT-START-------------------------------- */
+.about-content
+{
+    float: right;
+    width: 50%;
+    padding-right: 30px;
+}
+.about-content h2
+{
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    font-size: 34px;
+    font-weight: 600;
+    color: RGB(51,51 ,51);
+
+}
+.about-content h2::before
+{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 50%;
+    background-color: #ff305b;
+    left: 0;
+    top: 12px;
+}
+.about-content p
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: RGB(85, 85, 85);
+    margin-bottom:15px ;
+    padding-bottom: 20px;
+    border-bottom:1px dashed  RGB(85, 85, 85);
+    line-height: 25px
+    ;
+}
+.about-content ul li
+{
+    padding:10px 0;
+    width: 50%;
+    float: left;
+    color: RGB(85, 85, 85);
+
+}
+.about-content ul li span
+{
+    color: RGB(51, 51, 51);
+    font-weight: bold;
+}
+.about-content button
+{
+    background-color: #ff305b;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 15px;
+    margin-right:3px ;
+    padding: 10px 24px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.about-content button:hover
+{
+    background-color: #EC2403;
+}
+/* --------------------------------ABOUT-SECTION-CONTENT-FINISH-------------------------------- */
+
+/* --------------------------------ABOUT SECTION IMAGE START-------------------------------- */
+
+.about-image
+{
+width: 35%;
+float: right;
+margin-right: 50px;
+padding-right: 40px;
+}
+.about-image .border 
+{
+    border: 8px solid #555;
+    border-radius: 5px;
+}
+.about-image .border .image
+{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+}
+.about-image .border .image .layer
+{
+
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.about-image .border .image .layer .icons
+{
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 80;
+}
+.about-image .border .image .layer .icons i
+{
+    padding: 10px;
+}
+
+.about-image .border .image img
+{
+    width: 100%;
+}
+.about-image .border .image:hover .layer
+{
+    top: 0;
+}
+/*--------------------------------ABOUT-SECTION-IMAGE-FINISH-------------------------------- */
+/* --------------------------------SERVICES-SECTION-START-------------------------------- */
+.services 
+{
+    padding:30px 0 ;
+    background-color: #f1f1f1;
+}
+
+.services .container .services-items
+{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 20px;
+    line-height: 24px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    transition: box-shadow 0.5s;
+}
+.services .container .services-items h3
+{
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+}
+.services .container .services-items i
+{
+    font-size:x-large;
+    padding: 10px;
+    transition: transform 0.3s;
+
+}
+.services .container .services-items:hover i
+{
+    transform: scale(1.2);
+}
+.services .container .services-items:hover
+{
+    background-color: #fff;
+    box-shadow: 0px 1px 17px 8px rgba(0, 0, 0, 0.21);
+}
+/* --------------------------------services-section-end-------------------------------- */
+
+/* --------------------------------PORTFOLIO-SECTION-START------------------------------  */
+.portfolio
+{
+    padding: 30px 0 50px;
+} 
+
+.portfolio .container ul li{
+    text-align: center;
+    padding: 15px 0;
+}
+.portfolio .container ul li a
+{
+    padding: 0 10px;
+}
+.portfolio .container ul li a:hover 
+{
+    color: #ff305b;
+}
+.portfolio .container .main-section
+{
+    width: 90%;
+    margin: auto;
+}
+.portfolio .container .main-section .portfolio-items
+{
+    width: 33%;
+    float: left;
+    padding: 15px;
+}
+.portfolio .container .main-section .portfolio-items .inner
+{
+    position: relative;
+}
+.portfolio .container .main-section .portfolio-items .inner .layer{
+    opacity: 0;
+    background-color:rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    transition: all 0.5s;
+}
+.portfolio .container .main-section .portfolio-items .inner .layer i
+{
+    position: absolute;
+    font-size: large;
+    bottom: 7px;
+    right: 7px;
+    color: #ff305b;
+}
+.portfolio .container .main-section .portfolio-items .inner:hover .layer
+{
+    opacity: 1;
+}
+.portfolio .container .main-section .portfolio-items img
+{
+    width: 100%;
+}
+/* --------------------------------PORTFOLIO-SECTION-END------------------------------  */
+
+/* --------------------------------STATICS-SECTION-START-------------------------------- */
+.statics
+{
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.statics .container .static-items
+{
+    margin: auto;
+}
+.statics .container .static-items .inner
+{
+    width: 25%;
+    float: left;
+    text-align: center;
+    
+}
+.statics .container .static-items .inner i
+{
+    font-size: 26px;
+    color: #ff305b ;
+}
+.statics .container .static-items .inner h3
+{
+    font-size: 26px;
+    color: rgb(51, 51, 51);
+    padding: 10px 0 0 0 ;
+
+}
+.statics .container .static-items .inner h5
+{
+    color: rgb(85, 85, 85);
+
+}
+/* --------------------------------STATICS-SECTION-END-------------------------------- */
+
+/* --------------------------------TESTIMONIAL-SECTION-START-------------------------------- */
+.testimonial .testimonial-items
+{
+    background-color: #f1f1f1;
+    margin: 30px auto;
+    width: 70%;
+    padding: 40px;
+    border-radius: 8px;
+    position: relative;
+}
+.testimonial .testimonial-items .text-content
+{
+    float: left;
+    width: 75%;
+    position: relative;
+    left: -25px;
+}
+.testimonial .testimonial-items .text-content h3
+{
+font-size: 26px;
+margin-bottom: 10px;
+font-weight: 600;
+color: #333;
+}
+.testimonial .testimonial-items .text-content i p
+{
+position: relative;
+left: 17;
+top: -13;
+padding: 0;
+}
+.testimonial .testimonial-items .text-content i
+{
+font-size: 15px;
+color: #777777;
+margin-bottom: 5px;
+}
+.testimonial .testimonial-items .text-content  p
+{
+    padding-bottom: 15px;
+}
+.testimonial .testimonial-items .image-content
+{
+    position: relative;
+    float: left;
+    width: 25%;
+    padding-right: 15px;
+    text-align: right;
+    z-index: 3;
+    left: -40px;
+}
+
+.testimonial .testimonial-items .image-content img
+{
+    border-radius: 50%;
+    width: 130px;
+}
+
+.testimonial .testimonial-items .border
+{
+    border: 100px solid red;
+    border-color: #ff305b transparent transparent #ff305b;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* --------------------------------TESTIMONIAL-SECTION-END-------------------------------- */
+
+/* --------------------------------OUR-BLOG-SECTION-START-------------------------------- */
+.our-blog
+{
+    background-color: #f1f1f1;
+}
+.our-blog .blog-items
+{
+    width: 33%;
+    float: left;
+    padding: 15px;
+    
+
+}
+.our-blog .blog-content
+{
+    padding: 20px;
+    background-color: #fff;
+}
+.our-blog .blog-content p
+{
+    margin: 7px 0;
+}
+.our-blog .blog-content h2
+{
+    font-weight: 600;
+    font-size: 24px;
+    transition: all 0.5s;
+}
+.our-blog .blog-content h2:hover
+{
+    color: #ff305b;
+}
+.our-blog .blog-items img
+{
+    width: 100%;
+}
+.our-blog .blog-items span
+{
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+.our-blog .blog-items span:hover
+{
+    color: #ff305b;
+}
+/* --------------------------------OUR-BLOG-SECTION-END-------------------------------- */
+
+/*--------------------------------CONTACT-FORM-START-------------------------------- */
+.contact-content
+{
+    width: 65%;
+    margin: auto;
+}
+.contact-content input
+{
+    padding: 15px;
+    float: left;
+    margin: 10px 15px;
+    border-radius: 4px;
+    border: 1px #5555 solid;
+}
+.contact-content input:nth-of-type(1)
+{
+    width: 40%;
+}
+.contact-content input:nth-of-type(2)
+{
+    width: 46.5%;
+}
+.contact-content input:nth-of-type(3)
+{
+    width: 90%;
+}
+textarea
+{
+    width: 90%;
+    margin: 15px ;
+    border-radius: 4px;
+    border-color: #5555;
+}
+textarea::placeholder
+{
+    font-family: 'Roboto', sans-serif;
+
+}
+::placeholder
+{
+    padding: 9px;
+}
+form button
+{
+    margin: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff305b;
+    border: none;
+    transition: all 0.5s;
+}
+form button:hover
+{
+    background-color: #EC2403;
+}
+/*--------------------------------CONTACT-FORM-END-------------------------------- */
+footer
+{
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+.footer-content
+{
+    padding: 20px;
+}
+.footer-content i
+{
+    padding: 8px;
+}
+footer a
+{
+    color: #ff305b;
+}
+footer p
+{
+    color: #fff;
+}
